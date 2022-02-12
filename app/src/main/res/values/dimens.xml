@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="multiplier_4">12dp</dimen>
+    <dimen name="width_logo_joinus">360dp</dimen>
+</resources>
