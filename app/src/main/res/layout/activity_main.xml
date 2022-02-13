@@ -16,9 +16,9 @@
         android:id="@+id/editTextUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_bottom_user"
         android:layout_gravity="bottom"
-        android:layout_marginHorizontal="@dimen/multiplier_4"
+        android:layout_marginHorizontal="@dimen/multiplier_2"
+        android:layout_marginBottom="@dimen/margin_bottom_user"
         android:drawableStart="@drawable/vector_person"
         android:hint="@string/hintUser" />
 
@@ -27,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/multiplier_2"
         android:layout_marginBottom="@dimen/margin_bottom_password"
-        android:layout_marginHorizontal="@dimen/multiplier_4"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hintPassword" />
 
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginHorizontal="@dimen/multiplier_4"
+        android:layout_marginHorizontal="@dimen/multiplier_2"
         android:text="@string/login" />
 
 
