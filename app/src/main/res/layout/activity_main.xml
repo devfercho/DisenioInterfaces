@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/dimens_logo_joinus"
+        android:layout_height="@dimen/dimens_logo_joinus"
+        android:layout_gravity="center"
         android:background="@mipmap/image_joinus_foreground" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8" />
 
     <EditText
         android:id="@+id/editTextUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/multiplier_4"
+        android:layout_marginBottom="@dimen/margin_bottom_user"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/multiplier_4"
         android:drawableStart="@drawable/vector_person"
         android:hint="@string/hintUser" />
 
@@ -30,7 +26,9 @@
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/multiplier_4"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_bottom_password"
+        android:layout_marginHorizontal="@dimen/multiplier_4"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hintPassword" />
 
@@ -38,8 +36,9 @@
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:layout_marginHorizontal="@dimen/multiplier_4"
         android:text="@string/login" />
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>
