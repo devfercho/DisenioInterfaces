@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/width_image_view"
+        android:layout_height="@dimen/width_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="@mipmap/image_joinus_foreground" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8" />
 
     <EditText
         android:id="@+id/editTextUser"
@@ -24,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/multiplier_4"
         android:drawableStart="@drawable/vector_person"
+        app:layout_constraintBottom_toTopOf="@id/editTextPassword"
         android:hint="@string/hintUser" />
 
     <EditText
@@ -31,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/multiplier_4"
+        app:layout_constraintBottom_toTopOf="@id/buttonLogin"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hintPassword" />
 
@@ -38,8 +37,9 @@
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginHorizontal="@dimen/multiplier_4"
         android:text="@string/login" />
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
