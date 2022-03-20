@@ -17,18 +17,17 @@
 
     <EditText
         android:id="@+id/editTextUser"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/multiplier_4"
-        android:drawableStart="@drawable/vector_person"
         app:layout_constraintBottom_toTopOf="@id/editTextPassword"
         android:hint="@string/hintUser" />
 
     <EditText
         android:id="@+id/editTextPassword"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/multiplier_4"
         app:layout_constraintBottom_toTopOf="@id/buttonLogin"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hintPassword" />
